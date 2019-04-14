@@ -4,10 +4,10 @@ const path = require('path');
 const app = express();
 
 
-app.use(express.static(__dirname + '/dist/product-management-app'));
+app.use(express.static(__dirname + '/dist/products-management-app'));
 
 app.get('*', function(req,res) {
-    res.sendFile(path.join(__dirname + '/dist/product-management-app/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/products-management-app/index.html'));
 });
 
 app.listen(process.env.PORT || 8080);
