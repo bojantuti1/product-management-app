@@ -1,3 +1,15 @@
+<!--
 <div class="container-fluid">
     <h2>Welcome to Product Management App</h2>
+</div>
+-->
+
+
+<div class="container">
+  <h1 class="jumbotron-heading">Welcome to Product Management Application</h1>
+  <p class="lead text-muted">Managing products and customers by platform managers.</p>
+  <p>
+    <a routerLink="/products" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="btn btn-primary my-2">Products</a>
+    <a [routerLink]="['/customers']" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}" class="btn btn-secondary my-2">Customers</a>
+  </p>
 </div>
