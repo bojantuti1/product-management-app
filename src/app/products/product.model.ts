@@ -5,5 +5,4 @@ export class ProductModel {
     this.name = name;
     this.price = price;
   }
-
 };

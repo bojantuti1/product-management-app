@@ -46,10 +46,8 @@ export class CustomersService {
                                 error('Customer not added!');
                             }
                         }, 2000);
-
             }
         );
-
         return newCustomerObservable;
     }
 
